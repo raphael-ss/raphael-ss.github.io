@@ -76,12 +76,12 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Intro',
           },
           //{to: '/blog', label: 'Blog', position: 'left'},
           //{to: '/math', label: 'Matemática e Estatística', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/raphael-ss/',
             label: 'GitHub',
             position: 'right',
           },
@@ -91,33 +91,33 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Índice',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Intro',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Links Úteis',
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: 'https://stackoverflow.com/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'ChatGPT',
+                href: 'https://chat.openai.com/',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Python3 Docs',
+                href: 'https://docs.python.org/3/',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Extra',
             items: [
               //{
               //  label: 'Blog',
@@ -125,7 +125,7 @@ const config = {
               //},
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/raphael-ss',
               },
             ],
           },
