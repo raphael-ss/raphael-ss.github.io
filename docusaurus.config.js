@@ -30,7 +30,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'pt-BR'],
+    locales: ['en'],
   },
 
   presets: [
@@ -82,6 +82,7 @@ const config = {
           {
             href: '/docs/author',
             type: 'docSidebar',
+            sidebarID: 'tutorialSidebar',
             position: 'left',
             label: 'Sobre o Autor',
           },
