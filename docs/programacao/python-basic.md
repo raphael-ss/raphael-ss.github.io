@@ -77,10 +77,10 @@ Você pode redeclarar uma variável em Python.
 Esse operador é bastante útil: retorna o resto de uma divisão entre o primeiro número e o segundo número. Veja um exemplo
 
 ```python
-#Exemplo do poerador de módulo
-zero = 8 % 4
+# Exemplo do operador de módulo
+zero = 8 % 4 # = 0
 
-diff_than_zero = 12 % 5
+diff_than_zero = 12 % 5 # = 2
 ```
 
 ## Inteiros e Floats
