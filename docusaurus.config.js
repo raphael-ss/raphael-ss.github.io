@@ -70,7 +70,7 @@ const config = {
         title: 'DataComb',
         logo: {
           alt: 'datacomb-logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
