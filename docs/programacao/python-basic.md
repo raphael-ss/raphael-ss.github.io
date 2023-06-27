@@ -11,14 +11,14 @@ Serão abordados nessa seção os conceitos básicos de sintaxe e estilo da ling
 Aqui seguem os tópicos que vamos abordar:
 
 1. **Comentários**
-2. **Operadores-Aritméticos**
+2. **Operadores Aritméticos**
 3. **Variáveis**
-4. **Operador-Módulo-(%)**
-5. **Inteiros-e-Floats**
+4. **Operador Módulo (%)**
+5. **Inteiros e Floats**
 6. **Erros**
-7. **Strings-(básico)**
+7. **Strings (básico)**
 8. **print()**
-9. **Tipo-de-Dados**
+9. **Tipo de Dados**
 
 Começando do tópico 1:
 
@@ -46,13 +46,13 @@ point out you are the author. Either way, it's very useful.
 Como na maioria das linguagens, Python possui operadores aritméticos embutidos na linguagem. Você também pode utilizar de
 funções matemáticas mais complexas e efetuar cálculos avançados usando bibliotecas que possuam essas funções.
 De qualquer modo, Python possui:
-_+_ para adição
-_-_ para subtração
-_*_ para multiplicação
-_/_  para divisão
-_%_ para o módulo (resto da divisão)
-_**_ para exponenciação
-_x += y_ para x = x + y (também funciona para concatenar strings)
+1._+_ para adição
+2._-_ para subtração
+3._*_ para multiplicação
+4._/_  para divisão
+5._%_ para o módulo (resto da divisão)
+6._**_ para exponenciação
+7._x += y_ para x = x + y (também funciona para concatenar strings)
 
 ## Variáveis 
 
@@ -125,6 +125,147 @@ print(gastos)
 ```
 Isso é por conta da imprecisão do float. Vamos cobrir formas melhores e mais complexas de trabalhar com floats eventualmente, mas por agora, 
 se contente com a função _round()_, que já vem implementada em Python.
-Para informações sobre a função, cheque a [documentação] (https://docs.python.org/3/library/functions.html#round) de Python.
+Para informações sobre a função, cheque a [documentação](https://docs.python.org/3/library/functions.html#round) de Python.
 
 ## Erros
+
+Existem alguns tipos de erros que você vai encontrar em Python. Antes disso, veja
+o procedimento padrão para resolução de erros.
+
+:::tip
+Como resolver?
+Leia a mensagem de erro e procure no código. Caso não saiba como resolver, 
+copie a mensagem e pesquise em ferramentas como Google e ChatGPT, ou leia
+a documentação da linguagem que está usando (Python, no nosso caso).
+:::
+
+Vamos explicá-los um a um:
+
+### SyntaxError
+
+Quando você errar a sintaxe do Python, ele vai jogar esse erro de volta em você.
+Veja um exemplo:
+
+```python
+# Observe a falta dos parênteses
+print "Hello World" 
+```
+O Interpretador dirá:
+
+```bash
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print("hello")?
+```
+
+:::danger
+Como evitar? 
+Se atente à sintaxe da linguagem e preste bastante atenção ao longo das sessões
+de programação. 
+:::
+
+### TypeError
+
+Esse erro aparece quando você tenta aplicar uma operação num
+tipo inapropriado, isto é, usar uma operação de um tipo de dado num
+outro tipo. Observe:
+
+```python
+print(2+'2')
+```
+Veja a saída:
+```bash
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+```
+Iremos cobrir o que significa exatamente essa mensagem em breve, em próximas seções.
+
+:::danger
+Como evitar? 
+Se atente ao tratamento de tipos e se formatou corretamente as operações, 
+*inputs* e *outputs* do código, para os tipos corretos.
+:::
+
+### ValueError
+
+Esse erro aparece quando você tenta passar como argumento para um função um valor
+com o tipo inadequado. É semelhante ao *TypeError*, mas é específico para argumentos de função.
+
+```python
+# Vamos usar uma função para converter um valor pra inteiro:
+int('xyz')
+```
+Observe a saída:
+
+```bash
+int('xyz')
+ValueError: invalid literal for int() with base 10: 'xyz'
+```
+:::danger
+Como evitar? 
+Leia a documentação das funções que você usar com atenção, e documente as funções
+que criar, para não se confundir com seu próprio código.
+:::
+
+### NameError
+
+Esse erro aparece quando um objeto não foi encontrado, isto é, existe uma 
+referenciação no seu código a alguma coisa que não está nele.
+Geralmente se dá por conta de erro de digitação.
+
+```python
+idade = 18
+print(idad)
+```
+
+Veja a saída:
+
+```bash
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'idad' is not defined. Did you mean: 'idade'?
+```
+
+:::danger
+Como evitar? 
+Escolha bem e preste atenção às variáveis que cria, e à referenciação de
+objetos no código. Caso seja um código muito longo, considere documentar 
+as variáveis.
+:::
+
+### ZeroDivisionError
+
+Esse erro é bem simples: aparece quando o segundo operando da divisão (denominador)
+é zero.
+
+```python
+error_value = 100/0
+```
+
+Observe a saída:
+
+```bash
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+```
+:::danger
+Como evitar? 
+Trate bem os casos do código para que isso não aconteça e considere usar um Execeção.
+:::
+
+### IndentationError
+
+Esse erro aparece quando a indentação do código não está correta. 
+Como Python é uma linguagem que usa *whitespace* para determinar a ordem
+do código, deve-se atentar à esse fator.
+
+:::danger
+Como evitar? 
+Observe e preste atenção à tabulação/espaço do código.
+:::
+
+
+Isso cobre os erros que encontraremos de início. Mais pra frente, veremos
+diversos outros tipos de erros, e mais importante, como resolvê-los.
+
+
