@@ -10,15 +10,15 @@ sidebar_position: 1
 Serão abordados nessa seção os conceitos básicos de sintaxe e estilo da linguagem de programação Python.
 Aqui seguem os tópicos que vamos abordar:
 
-1. Comentários
-2. Operadores Aritméticos
-3. Variáveis
-4. Operador Módulo (%)
-5. Inteiros e Floats
-6. Erros
-7. Strings (básico)
-8. print()
-9. Tipo de Dados 
+1. **Comentários**
+2. **Operadores-Aritméticos**
+3. **Variáveis**
+4. **Operador-Módulo-(%)**
+5. **Inteiros-e-Floats**
+6. **Erros**
+7. **Strings-(básico)**
+8. **print()**
+9. **Tipo-de-Dados**
 
 Começando do tópico 1:
 
@@ -99,4 +99,32 @@ ponto_flutuante = 9,999
 ```
 
 Um ponto importante é a divisão inteira: em muitas linguagens, quando se efetua uma divisão entre dois inteiros, mesmo que
-o resultado seja um número fracionário
+o resultado seja um número fracionário, o resultado se dá somente com o número inteiro, sem vírgula.
+Em Python, o operador _/_ já efetua uma divisão fracionária automaticamente, mesmo que os operandos sejam inteiros.
+Para utilizar a divisão inteira, faça desse modo:
+
+```python
+#Veja:
+
+ponto_flutuante = 11/4 # = 2,75
+#Basta usar duas barras:
+inteiro = 11//4 # = 2
+
+```
+
+Ao imprimir um float na tela, você poderá ver algo como:
+
+```python
+#Veja:
+
+preco_da_passagem = 110,1
+gastos = 3 * preco_da_passagem
+print(gastos)
+# Output: 330.29999999999995
+
+```
+Isso é por conta da imprecisão do float. Vamos cobrir formas melhores e mais complexas de trabalhar com floats eventualmente, mas por agora, 
+se contente com a função _round()_, que já vem implementada em Python.
+Para informações sobre a função, cheque a [documentação] (https://docs.python.org/3/library/functions.html#round) de Python.
+
+## Erros
