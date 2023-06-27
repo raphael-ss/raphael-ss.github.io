@@ -132,8 +132,7 @@ Para informações sobre a função, cheque a [documentação](https://docs.pyth
 Existem alguns tipos de erros que você vai encontrar em Python. Antes disso, veja
 o procedimento padrão para resolução de erros.
 
-:::tip
-Como resolver?
+:::Como Resolver?
 Leia a mensagem de erro e procure no código. Caso não saiba como resolver, 
 copie a mensagem e pesquise em ferramentas como Google e ChatGPT, ou leia
 a documentação da linguagem que está usando (Python, no nosso caso).
@@ -156,8 +155,7 @@ O Interpretador dirá:
 SyntaxError: Missing parentheses in call to 'print'. Did you mean print("hello")?
 ```
 
-:::danger
-Como evitar? 
+:::Como Evitar?
 Se atente à sintaxe da linguagem e preste bastante atenção ao longo das sessões
 de programação. 
 :::
@@ -179,8 +177,7 @@ TypeError: can only concatenate str (not "int") to str
 ```
 Iremos cobrir o que significa exatamente essa mensagem em breve, em próximas seções.
 
-:::danger
-Como evitar? 
+:::Como Evitar?
 Se atente ao tratamento de tipos e se formatou corretamente as operações, 
 *inputs* e *outputs* do código, para os tipos corretos.
 :::
@@ -200,8 +197,7 @@ Observe a saída:
 int('xyz')
 ValueError: invalid literal for int() with base 10: 'xyz'
 ```
-:::danger
-Como evitar? 
+:::Como Evitar?
 Leia a documentação das funções que você usar com atenção, e documente as funções
 que criar, para não se confundir com seu próprio código.
 :::
@@ -225,8 +221,7 @@ Traceback (most recent call last):
 NameError: name 'idad' is not defined. Did you mean: 'idade'?
 ```
 
-:::danger
-Como evitar? 
+:::Como Evitar?
 Escolha bem e preste atenção às variáveis que cria, e à referenciação de
 objetos no código. Caso seja um código muito longo, considere documentar 
 as variáveis.
@@ -248,9 +243,8 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ZeroDivisionError: division by zero
 ```
-:::danger
-Como evitar? 
-Trate bem os casos do código para que isso não aconteça e considere usar um Execeção.
+:::Como Evitar? 
+Trate bem os casos do código para que isso não aconteça e considere usar um Exceção.
 :::
 
 ### IndentationError
@@ -259,8 +253,7 @@ Esse erro aparece quando a indentação do código não está correta.
 Como Python é uma linguagem que usa *whitespace* para determinar a ordem
 do código, deve-se atentar à esse fator.
 
-:::danger
-Como evitar? 
+:::Como Evitar?
 Observe e preste atenção à tabulação/espaço do código.
 :::
 
