@@ -5,7 +5,6 @@ sidebar_position: 1
 # Python Básico
 
 
-
 ## Tópicos
 
 Serão abordados nessa seção os conceitos básicos de sintaxe e estilo da linguagem de programação Python.
@@ -100,4 +99,4 @@ ponto_flutuante = 9,999
 ```
 
 Um ponto importante é a divisão inteira: em muitas linguagens, quando se efetua uma divisão entre dois inteiros, mesmo que
-o resultado seja um número fracioário
+o resultado seja um número fracionário
