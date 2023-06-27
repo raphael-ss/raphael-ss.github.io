@@ -79,6 +79,12 @@ const config = {
             position: 'left',
             label: 'Intro',
           },
+          {
+            href: '/docs/author',
+            type: 'docSidebar',
+            position: 'left',
+            label: 'Sobre o Autor',
+          },
           //{to: '/blog', label: 'Blog', position: 'left'},
           //{to: '/math', label: 'Matemática e Estatística', position: 'left'},
           {

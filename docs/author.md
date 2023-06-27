@@ -1,3 +1,6 @@
+---
+sidebar_position: 2
+---
 # Sobre o Autor
 
 Sou estudante de **Ciência de Computação** na UFES (Universidade Federal do Espírito Santo).
