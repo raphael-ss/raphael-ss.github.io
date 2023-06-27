@@ -19,6 +19,7 @@ Aqui seguem os tópicos que vamos abordar:
 6. Erros
 7. Strings (básico)
 8. print()
+9. Tipo de Dados 
 
 Começando do tópico 1:
 
@@ -84,3 +85,19 @@ diff_than_zero = 12 % 5
 ```
 
 ## Inteiros e Floats
+
+Em Python, podemos tratar números de 2 formas: como *float* ou como *int*. Se você está aqui, já deve saber a diferença. 
+Porém, para recapitular, sabemos que o tipo **inteiro** engloba os números negativos e positivos, não incluindo números
+com vírgula. Já o tipo **ponto flutuante** trata de números racionais, ou com vírgula. 
+O Interpretador irá inferir o tipo de acordo com as operações.
+
+```python
+# Exemplo 
+
+inteiro = 10
+ponto_flutuante = 9,999
+
+```
+
+Um ponto importante é a divisão inteira: em muitas linguagens, quando se efetua uma divisão entre dois inteiros, mesmo que
+o resultado seja um número fracioário
