@@ -139,7 +139,7 @@ $ anaconda-navigator
 ```
 Você deverá ver algo assim:
 
-![anaconda-navigator](./img/anaconda-navigator.png)
+![anaconda-navigator](static/img/anaconda-navigator.png)
 
 Pronto! Agora, essa instalação está completa. Vamos falar sobre como criar ambientes e gerenciá-los nas próximas seções.
 
