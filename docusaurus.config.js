@@ -79,7 +79,7 @@ const config = {
             position: 'left',
             label: 'Intro',
           },
-          {to: '/docs/author', label: 'Sobre o Autor', position: 'left'},
+          //{to: '/docs/author', label: 'Sobre o Autor', position: 'left'},
           //{to: '/math', label: 'Matemática e Estatística', position: 'left'},
           {
             href: 'https://github.com/raphael-ss/',

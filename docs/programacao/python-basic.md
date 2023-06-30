@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Python Básico
+# Python - Nível Básico 
 
 
 ## Tópicos
@@ -19,6 +19,7 @@ Aqui seguem os tópicos que vamos abordar:
 7. **Strings (básico)**
 8. **print()**
 9. **Tipo de Dados**
+10. **Entrada e Saída de Dados (I/O)**
 
 Começando do tópico 1:
 
@@ -28,7 +29,9 @@ Em Python, comentários são vistos com muito bons olhos, desde que sejam concis
 Segue a sintaxe adequada para comentar no código em Python:
 
 ```python
-#This is a comment
+
+# Isso é um comentário.
+
 ```
 
 O padrão é comentar acima da linha ou bloco ao qual você se refere. Também podemos comentar em várias linhas, caso
@@ -36,9 +39,9 @@ queira explicar algo mais detalhadamente ao longo de um projeto. Veja:
 
 ```python
 '''
-This is a multiline comment.~
-You can use it to specify details at the beggining of your code, or to 
-point out you are the author. Either way, it's very useful.
+Isso é um comentário multi-linha.
+
+Você pode usar para explicações mais longas, ou para remover uma parte do código para teste.
 '''
 ```
 ## Operadores Aritméticos
@@ -46,27 +49,36 @@ point out you are the author. Either way, it's very useful.
 Como na maioria das linguagens, Python possui operadores aritméticos embutidos na linguagem. Você também pode utilizar de
 funções matemáticas mais complexas e efetuar cálculos avançados usando bibliotecas que possuam essas funções.
 De qualquer modo, Python possui:
+
 1._+_ para adição
+
 2._-_ para subtração
+
 3._*_ para multiplicação
+
 4._/_  para divisão
+
 5._%_ para o módulo (resto da divisão)
+
 6._**_ para exponenciação
+
 7._x += y_ para x = x + y (também funciona para concatenar strings)
 
 ## Variáveis 
 
 São usadas para armazenar dados. Em Python, não requerem especificação de tipo de dado, nem de tamanho. Python usa de alocação
 de memória dinâmica para todas suas variáveis, e também é uma *dynamic typed language*, em oposição às *static typed language*, como C, 
-C++, Java, etc. Isso significa que o interpretador de Python 'infere' o tipo, sozinho.
+C++, Java, etc. Isso significa que o interpretador de Python 'infere' o tipo de dado da variável, sozinho.
 
 As variáveis em Python devem ser expressas com nomes significantes. Veja um exemplo de uma variável de contador:
 
 ```python
+
 a = 15 #não faça isso
 x = 15 #nem isso
 counter = 15 #isso pode
 counter_for_my_function = 15 #isso é desnecessário
+
 ```
 
 O operador _=_ é chamado de *assignment operator*, e não é usado para comparação, e sim para atribuição de valores a uma variável.
@@ -77,10 +89,12 @@ Você pode redeclarar uma variável em Python.
 Esse operador é bastante útil: retorna o resto de uma divisão entre o primeiro número e o segundo número. Veja um exemplo
 
 ```python
+
 # Exemplo do operador de módulo
 zero = 8 % 4 # = 0
 
 diff_than_zero = 12 % 5 # = 2
+
 ```
 
 ## Inteiros e Floats
@@ -257,8 +271,48 @@ do código, deve-se atentar à esse fator.
 Observe e preste atenção à tabulação/espaço do código.
 :::
 
-
 Isso cobre os erros que encontraremos de início. Mais pra frente, veremos
 diversos outros tipos de erros, e mais importante, como resolvê-los.
 
+
+## Strings (básico)
+
+Esse é um tópico consideravelmente extenso em Python, com diversar funções e formas de tratar esse tipo de dado na linguagem.
+Vamos conversar nessa seção sobre **o que é de fato uma string**, e como utilizá-la.
+
+Se você já conhece uma linguagem como C, sabe que string não é um tipo de dado da linguagem. É possível utilizar e manipular strings, 
+por meio de vetores (ou listas, para melhor entendimento) de caracteres. 
+
+Uma string, essencialmente, é isso. É uma série de caracteres em sequência, terminada em _\0_. Mas não se preocupe com o _\0_ em Python.
+
+Veja o exemplo abaixo:
+
+
+```python
+
+my_string = "Isso é uma string."
+
+```
+
+Esse tipo de dado engloba qualquer texto, palavra, qualquer dado no formato de uma série de caracteres.
+
+Existem alguns métodos para manipular strings em Python. Veja alguns:
+
+### title()
+
+```python
+
+'''
+Esse método torna em maiúscula os primeiros caracteres de cada palavra, caso não estejam;
+'''
+
+my_string = "hello world"
+
+titled_sting = my_string.title() 
+
+print(my_string) # >>> hello world
+
+print(titled_string) # >>> Hello World
+
+```
 
