@@ -27,9 +27,7 @@ Em Python, comentários são vistos com muito bons olhos, desde que sejam concis
 Segue a sintaxe adequada para comentar no código em Python:
 
 ```python
-
 # Isso é um comentário.
-
 ```
 
 O padrão é comentar acima da linha ou bloco ao qual você se refere. Também podemos comentar em várias linhas, caso
@@ -37,11 +35,9 @@ queira explicar algo mais detalhadamente ao longo de um projeto. Veja:
 
 ```python
 '''
-
 Isso é um comentário multi-linha.
 
 Você pode usar para explicações mais longas, ou para remover uma parte do código para teste.
-
 '''
 ```
 ## Operadores Aritméticos
@@ -65,10 +61,8 @@ De qualquer modo, Python possui:
 7. x += y  para x = x + y
 
 :::tip Note
-
 Uma funcionalidade interessante e útil é a concatenação de strings em Python. Você pode concatená-las (juntá-las)
 usando o operador **+**.
-
 :::
 
 ## Variáveis 
@@ -80,12 +74,10 @@ C++, Java, etc. Isso significa que o interpretador de Python 'infere' o tipo de 
 As variáveis em Python devem ser expressas com nomes significantes. Veja um exemplo de uma variável de contador:
 
 ```python
-
 a = 15 #não faça isso
 x = 15 #nem isso
 counter = 15 #isso pode
 counter_for_my_function = 15 #isso é desnecessário
-
 ```
 
 O operador **=** é chamado de *assignment operator*, e não é usado para comparação, e sim para atribuição de valores a uma variável.
@@ -95,13 +87,11 @@ O operador **=** é chamado de *assignment operator*, e não é usado para compa
 Esse operador é bastante útil: retorna o resto de uma divisão entre o primeiro número e o segundo número. Veja um exemplo
 
 ```python
-
 # Exemplo do operador de módulo %
 
 zero = 8 % 4 # = 0
 
 diff_than_zero = 12 % 5 # = 2
-
 ```
 
 Você pode usá-lo para verificar a paridade de um número, ou se ele é primo. Existem inúmeras aplicações, então tenha isso em mente.
@@ -112,11 +102,9 @@ Existem alguns tipos de erros que você vai encontrar em Python. Antes disso, ve
 o procedimento padrão para resolução de erros.
 
 :::tip Como Resolver?
-
 Leia a mensagem de erro e procure no código. Caso não saiba como resolver, 
 copie a mensagem e pesquise em ferramentas como Google e ChatGPT, ou leia
 a documentação da linguagem que está usando (Python, no nosso caso).
-
 :::
 
 Vamos explicá-los um a um:
@@ -127,11 +115,9 @@ Quando você errar a sintaxe do Python, ele vai jogar esse erro de volta em voc�
 Veja um exemplo:
 
 ```python
-
 # Observe a falta dos parênteses
 
 print "Hello World" 
-
 ```
 O Interpretador dirá:
 
@@ -151,9 +137,7 @@ tipo inapropriado, isto é, usar uma operação de um tipo de dado num
 outro tipo. Observe:
 
 ```python
-
 print(2+'2')
-
 ```
 Veja a saída:
 ```bash
@@ -174,9 +158,7 @@ Esse erro aparece quando você tenta passar como argumento para um função um v
 com o tipo inadequado. É semelhante ao *TypeError*, mas é específico para argumentos de função.
 
 ```python
-
 # Vamos usar uma função para converter um valor pra inteiro:
-
 int('xyz')
 
 ```
@@ -198,10 +180,8 @@ referenciação no seu código a alguma coisa que não está nele.
 Geralmente se dá por conta de erro de digitação.
 
 ```python
-
 idade = 18
 print(idad)
-
 ```
 
 Veja a saída:
@@ -213,11 +193,9 @@ NameError: name 'idad' is not defined. Did you mean: 'idade'?
 ```
 
 :::danger Como Evitar?
-
 Escolha bem e preste atenção às variáveis que cria, e à referenciação de
 objetos no código. Caso seja um código muito longo, considere documentar 
 as variáveis.
-
 :::
 
 ### ZeroDivisionError
@@ -226,9 +204,7 @@ Esse erro é bem simples: aparece quando o segundo operando da divisão (denomin
 é zero.
 
 ```python
-
 error_value = 100/0
-
 ```
 
 Observe a saída:
@@ -239,9 +215,7 @@ Traceback (most recent call last):
 ZeroDivisionError: division by zero
 ```
 :::danger Como Evitar?
-
 Trate bem os casos do código para que isso não aconteça e considere usar um Exceção.
-
 :::
 
 ### IndentationError
@@ -251,9 +225,7 @@ Como Python é uma linguagem que usa *whitespace* para determinar a ordem
 do código, deve-se atentar à esse fator.
 
 :::danger Como Evitar?
-
 Observe e preste atenção à tabulação/espaço do código.
-
 :::
 
 Isso cobre os erros que encontraremos de início. Mais pra frente, veremos
@@ -274,9 +246,7 @@ Veja o exemplo abaixo:
 
 
 ```python
-
 my_string = "Isso é uma string."
-
 ```
 
 Esse tipo de dado engloba qualquer texto, palavra, qualquer dado no formato de uma série de caracteres.
@@ -286,7 +256,6 @@ Existem alguns métodos para manipular strings em Python. Veja alguns:
 ### Método _title()_
 
 ```python
-
 '''
 Esse método torna em maiúscula os primeiros caracteres de cada palavra, caso não estejam;
 '''
@@ -298,13 +267,11 @@ titled_string = my_string.title()
 print(my_string) # >>> hello world
 
 print(titled_string) # >>> Hello World
-
 ```
 
 ### Método _upper()_
 
 ```python
-
 '''
 Esse método torna toda a string em maiúscula;
 '''
@@ -316,13 +283,11 @@ upper_string = my_string.upper()
 print(my_string) # >>> hello world
 
 print(upper_string) # >>> HELLO WORLD
-
 ```
 
 ### Método _lower()_
 
 ```python
-
 '''
 Esse método torna toda a string em minúscula;
 '''
@@ -334,13 +299,11 @@ upper_string = my_string.lower()
 print(my_string) # >>> HELLO WORLD
 
 print(upper_string) # >>> hello world
-
 ```
 
 ### Método _strip()_
 
 ```python
-
 '''
 Esse método limpa a string, isto é, remove os espaços em branco dos dois lados;
 '''
@@ -364,7 +327,6 @@ print(left_spaced_string) # >>>           i love cookies
 right_spaced_string = my_string.lstrip()
 
 print(right_spaced_string) # >>> i love cookies
-
 ```
 
 Uma característica muito útil desse método é a possibilidade de especificar um caractere de limpeza, isto é, o método
@@ -373,7 +335,6 @@ Uma característica muito útil desse método é a possibilidade de especificar 
 Veja:
 
 ```python
-
 dirty_string = ";;;bnb;;;;;Hello Word;;;;;aaa;;;;"
 
 clean_string = my_string.strip(";bna")
@@ -381,7 +342,6 @@ clean_string = my_string.strip(";bna")
 print(dirty_string) # >>> ;;;bnb;;;;;Hello Word;;;;;aaa;;;;
 
 print(clean_string) # >>> Hello_World
-
 ```
 
 Para aprender mais sobre métodos de strings em Python, [clique aqui](https://www.w3schools.com/python/python_ref_string.asp).
@@ -400,12 +360,10 @@ Já o tipo **ponto flutuante** trata de números racionais, ou com vírgula.
 O Interpretador irá inferir o tipo de acordo com as operações.
 
 ```python
-
 # Exemplo 
 
 inteiro = 10
 ponto_flutuante = 9,999
-
 ```
 
 Um ponto importante é a divisão inteira: em muitas linguagens, quando se efetua uma divisão entre dois inteiros, mesmo que
@@ -414,20 +372,17 @@ Em Python, o operador _/_ já efetua uma divisão fracionária automaticamente, 
 Para utilizar a divisão inteira, faça desse modo:
 
 ```python
-
 #Veja:
 
 ponto_flutuante = 11/4 # = 2,75
 
 #Basta usar duas barras:
 inteiro = 11//4 # = 2
-
 ```
 
 Ao imprimir um float na tela, você poderá ver algo como:
 
 ```python
-
 #Veja:
 
 preco_da_passagem = 110,1
@@ -435,7 +390,6 @@ gastos = 3 * preco_da_passagem
 print(gastos)
 
 # Output: 330.29999999999995
-
 ```
 Isso é por conta da imprecisão do float. Vamos cobrir formas melhores e mais complexas de trabalhar com floats eventualmente, mas por agora, 
 se contente com a função **round()**, que já vem implementada em Python.
@@ -454,13 +408,11 @@ inúmeras aplicações.
 Veja um exemplo:
 
 ```python
-
 dogs_are_cool = True
 
 cats_are_ugly = False
 
 expression = dogs_are_cool and cats_are_ugly # >>> False
-
 ```
 
 Python tem outros vários tipos de dados, mas não convém ao momento. 
@@ -474,7 +426,6 @@ Veja:
 ### Função _print()_
 
 ```python
-
 '''
 Veja o funcionamento básico dessa função;
 '''
@@ -487,14 +438,49 @@ Você pode concatenar com uma mensagem, mas não esqueça de converter o dado pa
 '''
 
 print("Meu número favorito é " + str(cool_number) + ".") # >>> Meu número favorito é 33.
-
 ```
 
 A função **print()** já acompanha uma quebra de linha (\n) automaticamente. Para desabilitar a quebra de linha, faça:
 
 ```python
-
 print("Hello World", newline="")
-
 ```
 
+:::tip Curiosidade
+Caso queira imprimir um texto colorido no terminal, você pode usar o padrão de representação cores ANSI, veja como:
+```python
+print("\033[1;32m Hello World!") # >>> Hello World! em verde claro
+'''
+Veja: \033 é o caractere de escape. É o mesmo para todas as cores;
+      1 para o estilo: normal;
+      32 para a cor: verde claro
+'''
+```
+Você pode trocar de cor para qualquer cor que quiser. Basta saber o código da cor.
+:::
+
+### Função _input()_
+
+Para receber uma entrada do usuário pelo terminal, podemos usar a função **input()**. Tem algumas coisas que precisamos saber sobre essa
+função antes de demonstrar.
+
+Essa função **recebe qualquer entrada como uma string** automaticamente, mesmo se for um inteiro, um float ou um bool. Portanto, para
+utilizar um dado inserido, deve-se convertê-lo no tipo de dado que quer utilizar. Pode ser interessante checar também se o usuário
+deu uma entrada correta.
+
+```python
+idade = input("Digite sua idade: ")
+# Supondo que eu digitei 18:
+
+idade_futura = int(idade) + 20
+
+print("Em 20 anos você vai ter {idade_futura}!".format(idade_futura=idade_futura))
+# >>> Em 20 anos você vai ter 38 anos!
+```
+
+Não se preocupe com a formatação usada nesse exemplo. Vamos falar desse método nas próximas seções.
+
+## Conclusão 🎑
+
+Bom, essa seção termina aqui. Caso tenha alguma dúvida que não conseguiu encontrar online, envie para raphaelsoaresbrasil@gmail.com.
+Obrigado pela atenção, e bons estudos.
