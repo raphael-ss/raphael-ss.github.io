@@ -88,7 +88,7 @@ Recomendo que procure saber se existe uma versão nova antes de instalar. Para s
 [clique aqui](https://repo.anaconda.com/archive/).
 :::
 
-Agora, depois de concluído o processo, rode este comando para conferir se a instalaçoa se deu corretamente:
+Agora, depois de concluído o processo, rode este comando para conferir se a instalação se deu corretamente:
 
 ```bash
 $ sha256sum anaconda.sh
@@ -139,7 +139,7 @@ $ anaconda-navigator
 ```
 Você deverá ver algo assim:
 
-![anaconda-navigator](https://docs.anaconda.com/free/navigator/index.html)
+![anaconda-navigator](./img/anaconda-navigator.png)
 
 Pronto! Agora, essa instalação está completa. Vamos falar sobre como criar ambientes e gerenciá-los nas próximas seções.
 
