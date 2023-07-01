@@ -1,11 +1,11 @@
 ---
 sidebar_position: 1
+slug: /docs/programacao/python-basico
+title: "Python - Nível Básico"
+description: "Introdução À Python"
 ---
 
 # Python - Nível Básico 
-
-
-## Tópicos
 
 Serão abordados nessa seção os conceitos básicos de sintaxe e estilo da linguagem de programação Python.
 Aqui seguem os tópicos que vamos abordar:
