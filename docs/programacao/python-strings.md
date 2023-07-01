@@ -1,5 +1,8 @@
 ---
 sidebar_position: 5
+slug: /docs/programacao/python-strings
+title: "Python - Strings"
+description: "Strings em Python"
 ---
 
 # Python - Strings
