@@ -31,7 +31,7 @@ pixel da tela que você está lendo isso. Por exemplo:
 Essa cor é representada pela combinação (76, 192, 99) de vermelho, verde e azul, respectivamente. Você pode inferir que, como temos um valor desse para
 cada pixel, temos um valor mínimo de representação de 3 bytes por pixel, ou ainda 24 bits, dando uma faixa de representação de 256 níveis de intensidade.
 
-A razão de ser o espaço mínimo alocado por pixel é por que na prática, podemos representar informação adicional em cada pixel, como um parâmetro de trasparência, mas não vem ao caso.
+A razão de ser o espaço mínimo alocado por pixel é por que na prática, podemos representar informação adicional em cada pixel, como um parâmetro de transparência, mas não vem ao caso.
 
 O espaço de cor **RGB** é aditivo, ou seja, a representação da cor é a soma das intensidades. Por isso, quando uma das intensidades é 0, essa representa
 a cor Preto. E, similarmente, quando todas são 255, isto é, todas as 3 intensidades estão no valor máximo, obtemos a cor Branca.
