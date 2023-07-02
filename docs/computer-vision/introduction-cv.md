@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /docs/programacao/cv-intro
+slug: /docs/computer-vision/cv-intro
 title: "Visão Computacional - Introdução"
 description: "Um esboço da área promissora de Visão Computacional"
 ---

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /docs/programacao/cv-color-paces
+slug: /docs/computer-vision/cv-color-paces
 title: "Visão Computacional - Color Spaces"
 description: "Descrição dos Espaços de Cores"
 ---
