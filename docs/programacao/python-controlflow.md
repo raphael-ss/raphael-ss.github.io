@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-slug: /docs/programacao/python-basico
+slug: /docs/programacao/python-controwflow
 title: "Python - Control Flow"
 description: "If Statements, For Loops, While Loops, e mais."
 ---
