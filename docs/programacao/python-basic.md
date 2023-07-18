@@ -443,7 +443,7 @@ print("Meu número favorito é " + str(cool_number) + ".") # >>> Meu número fav
 A função **print()** já acompanha uma quebra de linha (\n) automaticamente. Para desabilitar a quebra de linha, faça:
 
 ```python
-print("Hello World", newline="")
+print("Hello World", end="")
 ```
 
 :::tip Curiosidade
