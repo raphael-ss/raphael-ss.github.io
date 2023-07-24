@@ -43,8 +43,6 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog:false,
         //math: {
@@ -79,8 +77,23 @@ const config = {
             position: 'left',
             label: 'Intro',
           },
-          //{to: '/docs/author', label: 'Sobre o Autor', position: 'left'},
-          //{to: '/math', label: 'Matemática e Estatística', position: 'left'},
+          /*
+          {
+            type: 'docSidebar',
+            sidebarId: 'docsSidebar',
+            position: 'left',
+            label: 'Docs',
+          },*/
+          /*
+          {
+            type: 'docSidebar',
+            sidebarId: 'projectsSidebar',
+            position: 'left',
+            label: 'Projetos',
+          },*/
+          // MUDANÇAS
+          //{to: '/pages/projetos', label: 'Projetos', position: 'left'},
+          //{to: '/pages/fontes', label: 'Fontes', position: 'left'},
           {
             href: 'https://github.com/raphael-ss/',
             label: 'GitHub',
@@ -96,11 +109,11 @@ const config = {
             items: [
               {
                 label: 'Intro',
-                to: '/docs/intro',
+                to: '/',
               },
               {
                 label: 'Sobre o Autor',
-                to: '/docs/author',
+                to: '/author',
               },
             ],
           },
