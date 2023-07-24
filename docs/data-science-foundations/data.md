@@ -60,5 +60,17 @@ Visualizar dados em gráficos e representações é uma das maneiras mais comuns
 levam à um entendimento mais profundo de todos os leitores, inclusive do Cientista que a fez.
 
 Também provém melhores argumentos de convencimento em apresentações e comunicação de resultados ou decisões.
+Um exemplo histórico e trágico é o da visualização do engenheiro contratado da NAS que tentou argumentar que o ônibus espacial Challenger
+não deveria decolar no dia 28 de janeiro de 1986.
+
+O ônubus espacial carregava 7 astronautas americanos, e por conta de uma falha numa peça, após cerca de 2 minutos após a decolagem,
+o ônibus explodiu, matando todos os 7 tripulantes.
+
+Para ler e entender mais sobre o caso e a importância da visualização, e como uma visualização ruim pode impactar a vida real,
+[clique aqui](https://www.govloop.com/community/blog/challenger-disaster-importance-data-visualization/).
+
+É importante também, ao comunicar sobre dados e suas conclusões, prover contexto e clareza, pra ter certeza que o interlocutor
+entendeu de fato, e não está só lendo os números e gráficos.
+
 
 
