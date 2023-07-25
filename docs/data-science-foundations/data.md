@@ -8,15 +8,17 @@ description: "Aprenda sobre coleta de dados, qualidade dos dados, tipos de dados
 # Dados 📋
 
 Nesta seção, veremos um pouco sobre como pensar e nos relacionar com dados. 
-Atualmente, o mundo produz cerca de 328.77 milhões de *terabytes* de dados. **Por dia**. Não é um exagero afirmar que muitas empresas e
-negócios hoje são movidos por dados, e a importância das ferramentas para analisar esses dados e do conhecimento dos profissionais que
-os analisam só cresce.
+Atualmente, o mundo produz cerca de 328.77 milhões de *terabytes* de dados. **Por dia**. Não é um exagero afirmar que as empresas e
+negócios hoje são movidos por dados, e a importância das ferramentas para analisar esses dados e a importância do conhecimento dos profissionais que
+os analisam só cresce a cada dia.
+
+![Crescimento dos empregos de Cientistas de Dados](/img/data-science-jobs.png)
 
 Sem mais delongas, vamos falar de dados.
 
 ## Erros e Lacunas nos Dados
 
-Há uma frase bastante comum no mundo dos dados: **"Lixo entra, lixo sai"**. Isso significa que as **conclusões retiradas dos dados só serão**
+Há uma frase bastante comum no mundo dos dados (me disseram): **"Entra lixo, sai lixo"**. Isso significa que as **conclusões retiradas dos dados só serão**
 **verdadeiras, fortes e significantes se os dados por trás também forem**.
 Por exemplo, se construirmos um ótimo modelo, e o 'alimentar' com dados ruins, isto é, dados irrelevantes, com viés, sem sentido, errados,
 ou datados, teremos más previsões. 
@@ -44,27 +46,32 @@ reconhecer dados enviesados, e uma responsabilidade de se questionar:
 2. **"Quem participa dos dados?"**
 3. **"Quem está de fora desse conjunto de dados?"**
 
-## O Que É Estatística
+## O Que É Estatística?
 
 Estatística é a ciência de medir, analisar e relacionar dados. Ela ajuda a determinar diversas conclusões de dados e eventos, se esses
-acontecem por chance ou fatores sistêmicos. Por exemplo, é estatisticamente mais provável ter trânsito durante horas de pico provenientes do
-movimento pendular do que horas normais. Observe o trânsito às 17h numa quarta-feira e às 17h num domingo.
+acontecem por chance ou por fatores sistêmicos. Por exemplo, é estatisticamente mais provável ter trânsito durante horas de pico, provenientes do
+movimento pendular (ida e volta do trabalho), do que em horas normais. Observe o trânsito às 17h numa quarta-feira e às 17h num domingo numa cidade grande.
 
-Estatística pode revelar padrões sistêmicos em conjuntos de dados, ao invés de confiar em opiniões pessoais ou empirismo.
-Para ler um artigo extremamente interessante sobre o uso de estatística na determinação da existência de discriminação nos processos
-de empregamento, [clique aqui](https://scholars.law.unlv.edu/facpub/573/). 
+Estatística pode ajudar a revelar padrões sistêmicos em conjuntos de dados, e garantir *insights* reais e concretos ao invés de ter que confiar em opiniões pessoais ou empirismo para um projeto ou pesquisa.
+Existe um artigo extremamente interessante sobre o uso de estatística na determinação da existência de discriminação nos processos
+de contratação, ou seja, a prova que existe preconceito e discriminação nos processos seletivos para empregos em algumas empresas nos EUA. Para saber mais e ler o artigo da advogada que argumentou com estatística, [clique aqui](https://scholars.law.unlv.edu/facpub/573/). 
 
 ## Visualizações de Dados e sua Importância 📊
 
 Visualizar dados em gráficos e representações é uma das maneiras mais comuns e importantes de entender e comunicar dados. Boas visualizações
 levam à um entendimento mais profundo de todos os leitores, inclusive do Cientista que a fez.
 
-Também provém melhores argumentos de convencimento em apresentações e comunicação de resultados ou decisões.
-Um exemplo histórico e trágico é o da visualização do engenheiro contratado da NASA que tentou argumentar que o ônibus espacial Challenger
-não deveria decolar no dia 28 de janeiro de 1986.
+Também provém melhores argumentos de convencimento em apresentações e comunicação de resultados ou decisões, o que tem grande peso e importância
+no mundo corporativo. Um exemplo histórico, e, infelizmente, trágico, é o da visualização do engenheiro contratado da NASA que tentou argumentar que o ônibus espacial Challenger não deveria decolar no dia 28 de janeiro de 1986.
 
-O ônubus espacial carregava 7 astronautas americanos, e por conta de uma falha numa peça, após cerca de 2 minutos após a decolagem,
+Ele montou uma visualização que mostrava a frequência de problemas numa peça de selagem chamada O-Ring relacionada com a temperatura no dia da decolagem.
+Porém, a visualização não foi clara; muito pelo contrário, foi até confusa.
+
+O ônubus espacial carregava 7 astronautas americanos, e por conta da falha na peça, após cerca de 2 minutos após a decolagem,
 o ônibus explodiu, matando todos os 7 tripulantes.
+
+É claro que não foi culpa da visualização feita pelo engenheiro, mas pode-se imaginar que caso essa fosse mais convincente,
+o evento teria sido evitado.
 
 Para ler e entender mais sobre o caso e a importância da visualização, e como uma visualização ruim pode impactar a vida real,
 [clique aqui](https://www.govloop.com/community/blog/challenger-disaster-importance-data-visualization/).
@@ -108,6 +115,11 @@ Essencialmente, são variáveis definidas com palavras ao invés de números.
 ### Variáveis Numéricas ou Quantitativas
 
 Variáveis numéricas são obtidas por meio de contagem ou quantidade. Por exemplo, idade e salário são variáveis numéricas.
+
+## Qualidade dos Dados
+
+Devemos nos perguntar e refletir se os dados que coletamos representam de fato a realidade. Isto é, se são **precisos**. Para obter precisão de fato, precisamos de **padronização**, para que possamos medir os dados da mesma forma, e comparar dados que podem ser comparados. Sem medidas ou métodos padronizados, os dados coletados não serão precisos.
+
 
 ## Conclusão 🎑
 
