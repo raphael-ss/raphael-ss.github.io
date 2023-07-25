@@ -84,13 +84,19 @@ const config = {
             position: 'left',
             label: 'Docs',
           },*/
-          /*
+          
           {
             type: 'docSidebar',
             sidebarId: 'projectsSidebar',
             position: 'left',
             label: 'Projetos',
-          },*/
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'sourceSidebar',
+            position: 'left',
+            label: 'Fontes e Material Útil',
+          },
           // MUDANÇAS
           //{to: '/pages/projetos', label: 'Projetos', position: 'left'},
           //{to: '/pages/fontes', label: 'Fontes', position: 'left'},
