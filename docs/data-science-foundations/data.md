@@ -60,7 +60,7 @@ Visualizar dados em gráficos e representações é uma das maneiras mais comuns
 levam à um entendimento mais profundo de todos os leitores, inclusive do Cientista que a fez.
 
 Também provém melhores argumentos de convencimento em apresentações e comunicação de resultados ou decisões.
-Um exemplo histórico e trágico é o da visualização do engenheiro contratado da NAS que tentou argumentar que o ônibus espacial Challenger
+Um exemplo histórico e trágico é o da visualização do engenheiro contratado da NASA que tentou argumentar que o ônibus espacial Challenger
 não deveria decolar no dia 28 de janeiro de 1986.
 
 O ônubus espacial carregava 7 astronautas americanos, e por conta de uma falha numa peça, após cerca de 2 minutos após a decolagem,
