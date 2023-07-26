@@ -39,6 +39,8 @@ Vou deixar aqui alguns links que podem ser úteis pra meu uso pessoal e para qua
 
 - [Guia de Estudo de Ciência de Dados](https://techguide.sh/pt-BR/path/data-science/);
 
+- [Glossário de Estatística](https://www.spestatistica.pt/glossario);
+
 ## Conclusão 🎑
 
 Bom, essa seção termina aqui.

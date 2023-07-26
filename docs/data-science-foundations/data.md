@@ -5,12 +5,14 @@ title: "Dados - Visão Geral"
 description: "Aprenda sobre coleta de dados, qualidade dos dados, tipos de dados e mais."
 ---
 
-# Dados 📋
+# Visão Geral: Dados 📋
 
 Nesta seção, veremos um pouco sobre como pensar e nos relacionar com dados. 
 Atualmente, o mundo produz cerca de 328.77 milhões de *terabytes* de dados. **Por dia**. Não é um exagero afirmar que as empresas e
 negócios hoje são movidos por dados, e a importância das ferramentas para analisar esses dados e a importância do conhecimento dos profissionais que
 os analisam só cresce a cada dia.
+
+Veja um gráfico de linha que demonstra o crescimento dos empregos dos cientistas de dados nos últimos anos:
 
 ![Crescimento dos empregos de Cientistas de Dados](/img/data-science-jobs.png)
 
@@ -78,6 +80,16 @@ Para ler e entender mais sobre o caso e a importância da visualização, e como
 
 É importante também, ao comunicar sobre dados e suas conclusões, prover contexto e clareza, pra ter certeza que o interlocutor
 entendeu de fato, e não está só lendo os números e gráficos.
+
+Ainda em visualizações, é importante saber quando uma visualização é **enganosa**. Observe a imagem a seguir:
+
+![Visualização Enganosa comparada com a verdadeira](/img/misleading-visualizations.png)
+
+Veja o **primeiro gráfico**: Se algum desavisado olhar sem muita atenção, entenderá que houve um **aumento enorme** nas taxas de juros (*interest rates*). Porém, perceba que o eixo Y começa de um ponto diferente de 0, ou seja, da origem.
+
+Isso influencia bastante a forma que interpretamos a visualização, e pode levar o leitor à uma conclusão exagerada, ou até mesmo equivocada. 
+
+Já o **segundo gráfico** mostra o aumento com ambos eixos X e Y dimensionados corretamente a partir da origem e em escala. Percebe a diferença?
 
 ## Correlação e Causalidade
 
