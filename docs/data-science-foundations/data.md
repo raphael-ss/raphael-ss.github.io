@@ -25,7 +25,7 @@ Há uma frase bastante comum no mundo dos dados (me disseram): **"Entra lixo, sa
 Por exemplo, se construirmos um ótimo modelo, e o 'alimentar' com dados ruins, isto é, dados irrelevantes, com viés, sem sentido, errados,
 ou datados, teremos más previsões. 
 
-:::tip Importante
+:::note Importante
 Devemos sempre refletir para questionar as perguntas certas, para que possamos coletar dados relevantes e significantes.
 Uma boa prática é se perguntar:
 

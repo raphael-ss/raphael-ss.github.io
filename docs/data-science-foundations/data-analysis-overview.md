@@ -34,7 +34,7 @@ As medidas que usamos nessa análise são:
 
 Outra etapa essencial na análise descritiva é a plotagem de gráficos, ou seja, a **visualização**. Ela permite a notação de padrões implícitos nos dados, e possibilita um melhor entendimento do conjunto de dados em geral. 
 
-:::danger Limites da Análise Descritiva
+:::caution Limites da Análise Descritiva
 Nossas conclusões são limitadas somente ao conjunto de dados que analisamos: não somos capazes (ainda, nessa etapa) de estender nossas conclusões para outros escopos.
 :::
 
@@ -42,7 +42,7 @@ Nossas conclusões são limitadas somente ao conjunto de dados que analisamos: n
 
 Em seguida, podemos fazer a análise exploratória, cujo objetivo principal é **descobrir relações entre variáveis** no nosso conjunto, como, por exemplo, se dias mais quentes levam a um maior consumo de sorvetes e picolés.
 
-:::tip Correlação e Causalidade
+:::note Correlação e Causalidade
 Note que, não é por que uma variável está relacionada com outra, que essas estão numa relação de causa e efeito. Para mais informações, [veja o tópico mais detalhado em outra seção na página](/docs/data-science-foundations/data.md/).
 :::
 
@@ -52,7 +52,7 @@ Variáveis relacionadas levam a *insights* importantes sobre os dados coletados.
 
 Essa análise nos possibilita **retirar conclusões sobre uma 'população' inteira, com base numa amostra dessa população**. **Testes A/B** são métodos de análise inferencial populares nos negócios para testar o desempenho de diferentes *features* e *designs* numa página *online*.
 
-:::tip Requisitos
+:::caution Requisitos
 1. A amostra deve ser grande e inclusiva o suficiente para representar a população total. Em torno de 10% da população é um bom tamanho.
 
 2. A amostra deve ser selecionada de forma randômica e representar a população total.
@@ -64,7 +64,7 @@ Essa análise nos possibilita **retirar conclusões sobre uma 'população' inte
 
 Para **determinar de fato a causa de um evento, usamos a análise causal**. Porém, essa deve ser feita com extremo cuidado para não retirar conclusões incorretas sobre a causa de um fator.
 
-:::tip Requisitos
+:::caution Requisitos
 1. **Controle**: somente uma variável deve ser mudada por vez e o resto deve ser mantido controlado para não influenciar o resultado do experimento.
 
 2. **Aleatoriedade**: deve-se escolher os sujeitos de análise de forma aleatória.
@@ -84,7 +84,7 @@ Esse método de análise tira vantagem de técnicas de aprendizado de máquina s
 
 Por exemplo, algoritmos de recomendação usam desse método.
 
-:::tip "Entra lixo, sai lixo"
+:::note "Entra lixo, sai lixo"
 A qualidade da previsão dos modelos de aprendizado de máquina só serão boas e confiáveis se os dados alimentados ao modelo também forem.
 :::
 
