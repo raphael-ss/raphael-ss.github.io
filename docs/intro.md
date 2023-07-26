@@ -144,3 +144,58 @@ Você deverá ver algo assim:
 
 Pronto! Agora, essa instalação está completa. Vamos falar sobre como criar ambientes e gerenciá-los nas próximas seções.
 
+### SQLite 🪶
+
+O SQLite é um software de banco de dados, ou seja, um RDBMS. É um software que permite que os usuários interajam com um banco de dados relacional. No SQLite, um banco de dados é armazenado em um único arquivo - uma característica que o distingue de outros mecanismos de banco de dados. Esse fato permite um alto grau de acessibilidade: copiar um banco de dados não é mais complicado do que copiar o arquivo que armazena os dados, compartilhar um banco de dados pode significar enviar um anexo de e-mail.
+
+Esse programa é mencionado [neste artigo](/docs/data-science-foundations/database-overview.md) do site, e em artigos sobre SQL.
+
+A portabilidade característica distintiva do SQLite, infelizmente, o torna uma escolha inadequada quando muitos usuários diferentes estão atualizando a tabela ao mesmo tempo (para manter a integridade dos dados, apenas um usuário pode escrever no arquivo por vez). Além disso, pode ser necessário um esforço adicional para garantir a segurança dos dados privados devido às mesmas características que tornam o SQLite acessível. 
+
+Além disso, o SQLite não oferece exatamente a mesma funcionalidade que muitos outros sistemas de banco de dados, limitando alguns recursos avançados oferecidos por outros sistemas de banco de dados relacionais. 
+
+Por fim, o SQLite não valida os tipos de dados. Enquanto muitos outros softwares de banco de dados rejeitariam dados que não estão em conformidade com o esquema de uma tabela, o SQLite permite que os usuários armazenem dados de qualquer tipo em qualquer coluna (sim, não é muito pŕatico, mas é remediável).
+
+Considerando isso, os benefícios de poder acessar e usar um banco de dados sem o envolvimento de uma aplicação de servidor são enormes. SQLite é usado no mundo todo para testagem, desenvolvimento, e em qualquer cenário que faz sentido que o banco de dados esteja no mesmo local que o código.
+
+Vamos usá-lo em alguns artigos e projetos. Para instalar, siga os procedimentos:
+
+```bash
+$ sudo apt update
+```
+
+E,
+
+```bash
+$ sudo apt upgrade
+```
+
+Para atualizar pacotes do sistema (isso evita dor de cabeça de vez em quando).
+
+Faça:
+
+```bash
+$ sudo apt-get install sqlite3
+```
+
+Após a instalação, digite o comando:
+
+```bash
+$ sqlite3 newdb.sqlite
+```
+
+Você verá algo como:
+
+```
+SQLite version 3.40.1 2022-12-28 14:03:47
+Enter ".help" for usage hints.
+sqlite> 
+```
+
+Isso significa que a instalação funcionou. Para sair, digite:
+
+```bash
+sqlite> .exit
+```
+
+Pronto! SQLite está instalado. Para mais informações sobre o software, [clique aqui](https://www.sqlite.org/index.html).

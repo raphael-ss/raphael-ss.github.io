@@ -54,9 +54,9 @@ Já disse que os dados em bancos de dados relacionais são organizados em tabela
 
 Veja um exemplo abaixo:
 
-![Exemplo de Tabela SQL](/static/img/sql-table-example.png)
+![Exemplo de Tabela SQL](/img/sql-table-example.png)
 
-Podemos chamar as linhas de linhas, ou registros, ou *rows*, e as colunas de colunas, ou campos ou *columns* (que são os termos em inglês). Veja os comandos de manipulação que usaremos:
+Podemos chamar as linhas de linhas, registros, ou *rows*, e as colunas de colunas, campos ou *columns* (que são os termos em inglês). Veja os comandos de manipulação que usaremos:
 
 ### CREATE TABLE 
 
@@ -94,12 +94,12 @@ CREATE TABLE estudantes (
 Com esse comando nós criamos uma tabela simples que o nome dos estudantes, as idades, data de início na escola e a média geral das notas. Perceba que serão distintos uns dos outros com a categoria **matricula**.
 
 :::note Padrões do SQL
-Os comandos devem e declarações ser escritas em letras maiúsculas, e são terminados em ponto e vírgula (**;**).
+As cláusulas e declarações ser escritas em letras maiúsculas, e são terminados em ponto e vírgula **;**.
 :::
 
 ### Restrições das Colunas (Column Constraints)
 
-Em muitos casos, será interessante determinar algumas restrições paara as colunas de nossas tabelas, para melhor organização, segurança e melhor adaptação e manipulabilidade.
+Em muitos casos, será interessante determinar algumas restrições para as colunas de nossas tabelas, para melhor organização, segurança e melhor adaptação e manipulabilidade.
 
 Você pode ver as restrições como 'regras'. Veja quais são:
 
