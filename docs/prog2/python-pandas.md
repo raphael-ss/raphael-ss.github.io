@@ -2,7 +2,7 @@
 sidebar_position: 1
 slug: /docs/programacao-2/python-pandas
 title: "Python - Pandas"
-description: "Introdução À pandas"
+description: "Introdução À Pandas"
 ---
 
 # Python - Pandas 🐼
@@ -581,3 +581,170 @@ df2 = pd.read_csv('dados_2.csv')
 
 merged_df = pd.merge(df1, df2, on='coluna_comum')
 ```
+
+### `pd.concat()`
+
+Essa função concatena dois DF's, nas linhas ou nas colunas. Retorna o DataFrame concatenado, e toma alguns argumentos, como: `axis`, que pode assumir o valor de `0` ou `1`, e denota
+se a concatenação deve ser ao longo das linhas ou colunas, respectivamente. `ignore_index` com o valor de `True` faz com que os índices sejam reiniciados, e `False` mantém os índices originais.
+E, por fim, a lista de DF's para concatenar. Note que, podem ser passados mais de 2 DF's. 
+
+```python
+import pandas as pd
+
+df1 = pd.DataFrame({
+    'A': ['A0', 'A1'],
+    'B': ['B0', 'B1'],
+    'C': ['C0', 'C1']})
+df2 = pd.DataFrame({
+    'A': ['A2', 'A3'],
+    'B': ['B2', 'B3']})
+
+result = pd.concat([df1, df2], axis=0, ignore_index=True)
+
+'''
+ 	A 	B 	C
+0 	A0 	B0 	C0
+1 	A1 	B1 	C1
+2 	A2 	B2 	NaN
+3 	A3 	B3 	NaN
+'''
+```
+
+### `pd.pivot_table()`
+
+Essa função permite reorganizar o DataFrame, agregar os valores, lidar com duplicatas e também pode lidar com vários valores para a mesma combinação de índice e coluna. 
+
+
+```python
+import pandas as pd
+
+df = pd.DataFrame({
+    'Date': ['2023-01-01', '2023-01-01', '2023-01-02', '2023-01-02'],
+    'City': ['A', 'B', 'A', 'B'],
+    'Temperature': [25, 30, 22, 28],
+    'Humidity': [40, 50, 35, 45]
+})
+
+pivot_table_df = pd.pivot_table(df, index='Date', columns='City', values=['Temperature', 'Humidity'], aggfunc='mean')
+
+'''
+ 	       Humidity Temperature
+City 	    A 	B 	A 	B
+Date 				
+2023-01-01 	40 	50 	25 	30
+2023-01-02 	35 	45 	22 	28
+'''
+```
+
+### Atributos de *DataFrames*
+
+Aqui seguem alguns atributos que podem ser úteis ao trabalhar com DataFrames. 
+
+### `values`
+
+Esse atributo retorna os valores do DF na forma de uma *ndarray*, assim como nas *Series*.
+
+```python
+df = pd.DataFrame({
+    'A': ['A0', 'A1'],
+    'B': ['B0', 'B1'],
+    'C': ['C0', 'C1']})
+
+print(df.values)
+
+'''
+[['A0' 'B0' 'C0']
+ ['A1' 'B1' 'C1']]
+'''
+
+#-Perceba que é retornada uma matriz, com 1 array por linha;
+```
+
+### `index`
+
+Esse atributo contém os índices associados à cada linha do DF. Perceba que, no exemplo, temos um índice comum, denotado por `RangeIndex`.
+
+```python
+df = pd.DataFrame({
+    'A': ['A0', 'A1'],
+    'B': ['B0', 'B1'],
+    'C': ['C0', 'C1']})
+
+print(df.index)
+
+#-RangeIndex(start=0, stop=2, step=1)
+```
+
+### `columns`
+
+Retorna os nomes das colunas do DF.
+
+```python
+df = pd.DataFrame({
+    'A': ['A0', 'A1'],
+    'B': ['B0', 'B1'],
+    'C': ['C0', 'C1']})
+
+print(df.columns)
+
+
+#-Index(['A', 'B', 'C'], dtype='object')
+```
+
+### `dtypes`
+
+Podemos verificar os tipos de dados armazenado no DF acessando esse atributo, que retorna uma *Series* com os nomes das colunas e seus tipos.
+
+```python
+df = pd.DataFrame({
+    'A': ['A0', 'A1'],
+    'B': ['B0', 'B1'],
+    'C': ['C0', 'C1']})
+
+print(df.dtypes)
+
+'''
+A    object
+B    object
+C    object
+dtype: object
+'''
+```
+
+### `size`
+
+Esse atributo retorna o n° de elementos no DF.
+
+```python
+df = pd.DataFrame({
+    'A': ['A0', 'A1', 'A2'],
+    'B': ['B0', 'B1', 'B2'],
+    'C': ['C0', 'C1', 'C2'],
+    'D': ['D0', 'D1', 'D2']})
+
+print(df.size)
+
+#-12
+```
+
+### `shape`
+
+O atributo `shape` retorna uma tupla representando a forma da estrutura, ou seja, `(número de linhas, número de colunas)`.
+
+```python
+df = pd.DataFrame({
+    'A': ['A0', 'A1'],
+    'B': ['B0', 'B1'],
+    'C': ['C0', 'C1']})
+
+print(df.shape)
+
+#-(2, 3)
+```
+
+Dado que esse artigo já está demasiado longo, irei listar os métodos de DataFrames num próximo artigo.
+
+## Conclusão 🎑
+
+Bom, essa seção termina aqui. Caso tenha alguma dúvida que não conseguiu encontrar online, envie para raphaelsoaresbrasil@gmail.com.
+Obrigado pela atenção, e bons estudos.
