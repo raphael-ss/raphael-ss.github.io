@@ -481,3 +481,103 @@ dtype: bool
 '''
 ```
 
+## Criando um *DataFrame*
+
+Podemos criar um *DataFrame* usando a função construtora `pd.DataFrame()`, e deve ser passado como argumento uma estrutura de dados tabular, bidimensional, potencialmente heterogênea. Alguns exemplos são:
+
+- __Listas__: dado que listas são bidimensional, contando os índices ordenados dos itens, passando uma lista como argumento, podemos transformá-la num DF;
+
+- __*nd-arrays*__: passando uma *ndarray* como argumento, os índices serão automaticamente definidos como uma sequência a partir de 0 (0, 1, 2, 3...), assim como com uma lista;
+
+- **Dicionários**: passando dicionários, os valores serão a coluna, e os índices serão as chaves dos respectivos valores;
+
+Veja alguns exemplos práticos:
+
+```python
+import numpy as np
+import pandas as pd
+
+my_list = [1,2,3,4,5]
+my_dict = {'A':[1,2,3], 'B':[4,5,6]}
+my_array = np.array([[1,2,3],[4,5,6]])
+
+print(pd.DataFrame(my_list))
+print(pd.DataFrame(my_dict))
+print(pd.DataFrame(my_array))
+
+'''
+Lista:
+   0
+0  1
+1  2
+2  3
+3  4
+4  5
+
+Dict:
+   A  B
+0  1  4
+1  2  5
+2  3  6
+
+Array:
+   0  1  2
+0  1  2  3
+1  4  5  6
+'''
+```
+
+### Input/Output (I/O)
+
+Em muitos casos, os dados que queremos transformar num DF estão em outros locais, como arquivos em memória. Para isso, a biblioteca Pandas possui
+diversas funçòes para entrada e saída de dados/
+
+### `read_csv()`
+
+Uma das funções mais úteis da biblioteca, na minha concepção, é a `read_csv()`. Essencialmente, a função lê um arquivo CSV (_Comma Separated Values_), 
+e tranforma os dados lidos num DF. Como argumento, pode-se passar tanto o nome do arquivo no diretório local, ou uma URL válida para download.
+
+```python
+import pandas as pd
+
+#-Existem vários outros argumentos, mas eles não vem o caso;
+#-Nessa função, o argumento 'header' especifica a quantidade de linhas de header (labels das colunas)
+#-E o 'names'especifica os rótulos, ou títulos, para as colunas
+url_df = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data', 
+                header=None, names=['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class'])
+
+#-Nesse caso, exemplifiquei que é também possível escolher o delimitador. 
+archive_df = pd.read_csv('Exemplo.csv', delimiter=';')
+
+print(url_df.head(5))
+
+'''
+   sepal_length  sepal_width  petal_length  petal_width        class
+0           5.1          3.5           1.4          0.2  Iris-setosa
+1           4.9          3.0           1.4          0.2  Iris-setosa
+2           4.7          3.2           1.3          0.2  Iris-setosa
+3           4.6          3.1           1.5          0.2  Iris-setosa
+4           5.0          3.6           1.4          0.2  Iris-setosa
+'''
+```
+
+Existem diversos outros métodos para entrada e saída de dados, como `read_json()`, `df.to_csv()`, e muitos outros, mas o uso principal será
+dado com leitura de CSV. Para mais informações, [visite a documentação](https://pandas.pydata.org/docs/reference/io.html).
+
+### Funções Gerais
+
+Algumas funções gerais são bastante útes para manipular as tabelas em pandas. 
+
+### `pd.merge()`
+
+A função `merge()` combina 2 DF's com base numa coluna em comum, que pode ser um índice ou outro valor que ambas possuem.
+
+```python
+import pandas as pd
+
+df1 = pd.read_csv('dados_1.csv')
+
+df2 = pd.read_csv('dados_2.csv')
+
+merged_df = pd.merge(df1, df2, on='coluna_comum')
+```

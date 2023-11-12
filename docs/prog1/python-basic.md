@@ -59,19 +59,19 @@ Como na maioria das linguagens, Python possui operadores aritméticos embutidos 
 funções matemáticas mais complexas e efetuar cálculos avançados usando bibliotecas que possuam essas funções.
 De qualquer modo, Python possui:
 
-1. "+" para adição
+1. `+` para adição
 
-2. "-" para subtração
+2. `-` para subtração
 
-3. "*" para multiplicação
+3. `*` para multiplicação
 
-4. "/" para divisão
+4. `/` para divisão
 
-5. "%" para o módulo (resto da divisão)
+5. `%` para o módulo (resto da divisão)
 
-6. "**" para exponenciação
+6. `**` para exponenciação
 
-7. x += y  para x = x + y
+7. `x += y`  para `x = x + y`
 
 :::note Note
 Uma funcionalidade interessante e útil é a concatenação de strings em Python. Você pode concatená-las (juntá-las)

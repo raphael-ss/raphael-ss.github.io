@@ -144,6 +144,91 @@ Você deverá ver algo assim:
 
 Pronto! Agora, essa instalação está completa. Vamos falar sobre como criar ambientes e gerenciá-los nas próximas seções.
 
+### Jupyter Notebook 🌔
+
+O Jupyter Notebook (às vezes chamado de IPython Notebook) é uma IDE que tem uma forma popular de escrever e executar código Python, especialmente para análise de dados, ciência de dados e aprendizado de máquina. 
+
+Os Jupyter Notebooks são fáceis de usar porque permitem que você **execute o código e revise rapidamente o resultado**. Esse processo iterativo é fundamental para a análise de dados e facilita o teste de hipóteses e o registro dos resultados (como um caderno de anotações).
+
+Por exemplo, vamos supor que você esteja visualizando um conjunto de dados sobre expectativa de vida por país. Você só quer mostrar alguns países, mas não tem certeza de quais selecionar. Com um Jupyter Notebook, você pode **experimentar várias versões e compará-las facilmente**. Melhor ainda, você tem um **registro escrito** do que já tentou, que pode mostrar a um colega de equipe (ou para si mesmo no futuro). Esse é apenas um exemplo das muitas vantagens de trabalhar em um ambiente semelhante a um caderno de anotações.
+
+O Jupyter Notebook usa um kernel de back-end chamado **IPython**. O 'I' significa 'Interativo', o que significa que um programa ou script pode ser dividido em partes menores e essas partes podem ser executadas independentemente do restante do programa.
+
+Você não precisa se preocupar com a diferença entre Python e IPython. A coisa importante a saber é que você pode executar pequenos trechos de código, o que pode ser útil ao trabalhar com dados.
+
+O Jupyter Notebook é um tipo de Ambiente de Desenvolvimento Integrado (IDE). As IDEs são locais para escrever código que oferecem alguns recursos de suporte. Quase todas as IDEs fornecem **realce de sintaxe**, **depuração** (debugger) e **preenchimento automático de código**. O Jupyter Notebook também oferece **documentação de ajuda incorporada** e **introspecção** (ou seja, você pode verificar os parâmetros de cada comando) e **exibição de gráficos e imagens embutida no próprio notebook**.
+
+Vamos baixar o Jupyter Notebook e fazer alguns testes. Caso o Navigator não esteja aberto, o abra com o comando:
+
+```bash
+$ anaconda-navigator
+```
+
+Na interface, clique em `Launch` na aba do Jupyter Notebook. Caso não esteja instalado, clique para fazer o *download*. 
+Uma página no seu navegador será aberta com a seguinte interface: 
+
+![Jupyter Interface](/img/jupyter-interface.png)
+
+Para abrir um novo arquivo Python, selecione `New`, e `Python3`. Você verá algo assim:
+
+![Jupyter](/img/jupyter.png)
+
+Esse bloco é uma **célula**. Na célula, podemos escrever código e testá-lo independentemente de outras células. Para rodar uma célula, 
+pode-se fazer `SHIFT` + `ENTER`, cou clicar em `Run`.
+
+Fazendo um teste simples, obtemos:
+
+![Jupyter Teste](/img/jupyter-test1.png)
+
+Vemos que, após rodar a primeira célula, duas coisas aconteceram:
+
+- Uma nova célula apareceu;
+- O Notebook mostrou uma saída;
+
+Para criar uma nova célula, podemos também clicar em `+`. Mas, por que o Notebook mostrou uma saída se não há nenhuma função
+`print()`?
+
+Isso acontece por que o Notebook mostra a saída esperada da última linha de código, se for impressa. Porém, só para a última linha. Pronto!
+Você está pronto para programar no Jupyter Notebook. Abaixo estão listadas algumas funcionalidades do Notebook.
+Para mais informações, [acesse a documentação](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html).
+
+:::tip Tipos de Células
+Para extrair o máximo do seu Notebook, e de fato usá-lo como um **caderno** (tradução de *notebook*), use diferentes tipos de célula para
+escrever código, melhorar a página com explicações customizadas e adicionar equações com estilo.
+
+Para escrever texto formatado e customizado, use as células de Markdown. Para saber mais sobre MD, [clique aqui](https://www.markdownguide.org/cheat-sheet/).
+
+Para escrever equações estilísticas como você escreveria num quadro, use LaTex dentro das células de Markdown. Para saber mais, [clique aqui](https://www.latex-project.org/help/documentation/).
+:::
+
+#### Funcionalidades Úteis do Jupyter
+
+O Jupyter Notebook possui ferramentas que nos auxiliam no fluxo de trabalho. Veja algumas delas:
+
+- **Função de Ajuda** `?`:
+
+Essa ferramenta nos permite ver as informações gerais e documentação sobre um objeto ou função. Observe:
+
+![Função de Ajuda do Jupyter](/img/jupyter-help.png)
+
+- **Sugestão de Escrita** `Tab`:
+
+Para ver sugestões do que escrever, aperte `Tab`. (Isso é bastante útil caso se esqueça o nome completo de alguma função).
+
+- **Documentação de uma Função** `Shift` + `Tab`:
+
+Caso tenha esquecido quais são os parâmetros de alguma função, coloque o cursor entre os parênteses, e aperte `Shift` + `Tab`.
+Você verá algo como:
+
+![Jupyter Test](/img/jupyter-test2.png)
+
+- **Debugger** `%debug`:
+
+Caso encontre (quando encontrar, por que **vai**) algum problema ou bug no código, use o comando mágico `%debug`. Uma célula
+temporária irá aparecer para testes sem precisar criar novas células, e tudo escrito nessa célula **não** será salvo.
+
+Para sair, digite `exit()`.
+
 ### SQLite 🪶
 
 O SQLite é um software de banco de dados, ou seja, um RDBMS. É um software que permite que os usuários interajam com um banco de dados relacional. No SQLite, um banco de dados é armazenado em um único arquivo - uma característica que o distingue de outros mecanismos de banco de dados. Esse fato permite um alto grau de acessibilidade: copiar um banco de dados não é mais complicado do que copiar o arquivo que armazena os dados, compartilhar um banco de dados pode significar enviar um anexo de e-mail.
