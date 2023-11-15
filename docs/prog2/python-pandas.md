@@ -10,7 +10,7 @@ description: "Introdução À Pandas"
 Após os conteúdos até OOP, somos capazes de adentrar de fato na programação voltada para **análise de dados**.
 A biblioteca *pandas* é uma ferramenta essencial para analistas e cientistas de dados. O importante sobre a biblioteca Pandas é um objeto chamado ***DataFrame***.
 
-Você pode pensar em um *DataFrame* como um tipo de tabela, similar a uma planilha do Excel, mas muito mais poderoso. As linhas e colunas têm índices, e podemos performar operações em ambos separadamente. 
+Você pode pensar em um *DataFrame* como um tipo de tabela, similar a uma planilha do Excel, mas muito mais poderoso. As linhas têm índices, que são um inteiro, e as colunas têm nome, que é uma string. Podemos performar operações em ambos separadamente. 
 
 A biblioteca pandas tem diversas funções úteis para trabalhar com dados faltando, fazer operações com colunas e linhas, e transformar dados. Além disso, várias funções de SQL são homólogas à funções de pandas. 
 
@@ -485,7 +485,7 @@ dtype: bool
 
 Podemos criar um *DataFrame* usando a função construtora `pd.DataFrame()`, e deve ser passado como argumento uma estrutura de dados tabular, bidimensional, potencialmente heterogênea. Alguns exemplos são:
 
-- __Listas__: dado que listas são bidimensional, contando os índices ordenados dos itens, passando uma lista como argumento, podemos transformá-la num DF;
+- __Listas__: dado que listas são bidimensional, contando os índices ordenados dos itens, passando uma lista como argumento, podemos transformá-la num DF. Podemos passar também uma lista de rótulos para nomear as colunas do DF. Caso esse argumento não seja passado, as colunas serâo rotuladas com índices crescentes, assim como os índices das linhas.
 
 - __*nd-arrays*__: passando uma *ndarray* como argumento, os índices serão automaticamente definidos como uma sequência a partir de 0 (0, 1, 2, 3...), assim como com uma lista;
 
@@ -497,17 +497,18 @@ Veja alguns exemplos práticos:
 import numpy as np
 import pandas as pd
 
-my_list = [1,2,3,4,5]
+my_list = [1,2,3,4,5,6]
 my_dict = {'A':[1,2,3], 'B':[4,5,6]}
-my_array = np.array([[1,2,3],[4,5,6]])
+my_array = np.array([[1,2,3],
+                     [4,5,6]])
 
-print(pd.DataFrame(my_list))
+print(pd.DataFrame(my_list, columns=["A"]))
 print(pd.DataFrame(my_dict))
-print(pd.DataFrame(my_array))
+print(pd.DataFrame(my_array, columns=["A","B","C"]))
 
 '''
 Lista:
-   0
+   A
 0  1
 1  2
 2  3
@@ -521,7 +522,7 @@ Dict:
 2  3  6
 
 Array:
-   0  1  2
+   A  B  C
 0  1  2  3
 1  4  5  6
 '''
@@ -742,7 +743,7 @@ print(df.shape)
 #-(2, 3)
 ```
 
-Dado que esse artigo já está demasiado longo, irei listar os métodos de DataFrames num próximo artigo.
+Dado que esse artigo já está demasiado longo, irei listar os métodos e as manipulações de DataFrames num próximo artigo.
 
 ## Conclusão 🎑
 
