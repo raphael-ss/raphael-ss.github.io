@@ -527,7 +527,7 @@ Array:
 '''
 ```
 
-### Input/Output (I/O)
+## Input/Output (I/O)
 
 Em muitos casos, os dados que queremos transformar num DF estão em outros locais, como arquivos em memória. Para isso, a biblioteca Pandas possui
 diversas funçòes para entrada e saída de dados/
@@ -564,7 +564,7 @@ print(url_df.head(5))
 Existem diversos outros métodos para entrada e saída de dados, como `read_json()`, `df.to_csv()`, e muitos outros, mas o uso principal será
 dado com leitura de CSV. Para mais informações, [visite a documentação](https://pandas.pydata.org/docs/reference/io.html).
 
-### Funções Gerais
+## Funções Gerais
 
 Algumas funções gerais são bastante útes para manipular as tabelas em pandas. 
 
@@ -636,7 +636,7 @@ Date
 '''
 ```
 
-### Atributos de *DataFrames*
+## Atributos de *DataFrames*
 
 Aqui seguem alguns atributos que podem ser úteis ao trabalhar com DataFrames. 
 
