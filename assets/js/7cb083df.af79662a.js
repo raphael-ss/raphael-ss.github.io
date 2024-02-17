@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdatacomb=self.webpackChunkdatacomb||[]).push([[639],{1846:a=>{a.exports=JSON.parse('{"title":"Math","slug":"/category/math","permalink":"/category/math","navigation":{"previous":{"title":"R - Basics","permalink":"/docs/data-analysis/r-basics"},"next":{"title":"Statistics - Essentials","permalink":"/docs/math/statistics"}}}')}}]);

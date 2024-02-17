@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdatacomb=self.webpackChunkdatacomb||[]).push([[5452],{3164:a=>{a.exports=JSON.parse('{"title":"Databases","slug":"/category/databases","permalink":"/category/databases","navigation":{"previous":{"title":"Intro - Extras","permalink":"/docs/extras/intro"},"next":{"title":"Databases - Overview","permalink":"/docs/extra/databases/overview"}}}')}}]);
